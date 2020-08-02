@@ -26,7 +26,7 @@
 
 ### Overview
 
-_**Vendor Connector** is an easy-to-use app whereby a person who is considering a wedding vendor can connect with people who have already used that vendor. They can hopefullly then gain more insight and make a more informed decision on whether on not to use them on their special day.
+**Vendor Connector** is an easy-to-use app whereby a person who is considering a wedding vendor can connect with people who have already used that vendor. They can hopefullly then gain more insight and make a more informed decision on whether on not to use them on their special day.
 
 <br>
 
@@ -36,9 +36,9 @@ _**Vendor Connector** is an easy-to-use app whereby a person who is considering 
 
 #### Desktop
 
-- ![Desktop landing](https://wireframe.cc/FooNMC)
+- [Desktop landing](https://wireframe.cc/FooNMC)
 
-- ![Create Reviews](https://wireframe.cc/6Dlx53)
+- [Create Reviews](https://wireframe.cc/6Dlx53)
 
 - ![Read Reviews](https://wireframe.cc/XL2QiL)
 
