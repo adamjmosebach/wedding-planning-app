@@ -40,17 +40,17 @@
 
 - [Create Reviews](https://wireframe.cc/6Dlx53)
 
-- ![Read Reviews](https://wireframe.cc/XL2QiL)
+- [Read Reviews](https://wireframe.cc/XL2QiL)
 
-- ![Browse Reviews](https://wireframe.cc/1ecskb)
+- [Browse Reviews](https://wireframe.cc/1ecskb)
 
 #### Mobile
 
-- ![Mobile landing](https://wireframe.cc/9Uf1yg)
+- [Mobile landing](https://wireframe.cc/9Uf1yg)
 
 #### Tablet
 
-- ![Tablet landing](https://wireframe.cc/E2Srqb)
+- [Tablet landing](https://wireframe.cc/E2Srqb)
 
 <br>
 
