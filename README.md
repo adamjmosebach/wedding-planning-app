@@ -26,7 +26,7 @@
 
 ### Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**Vendor Connector** is an easy-to-use app whereby a person who is considering a wedding vendor can connect with people who have already used that vendor. They can hopefullly then gain more insight and make a more informed decision on whether on not to use them on their special day.
 
 <br>
 
@@ -34,29 +34,23 @@ _**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum ri
 
 > Use the Wireframes section to display desktop, tablet and mobile views.
 
-![Dummy Link](url)
+#### Desktop
 
-- Desktop Landing
+- ![Desktop landing](https://wireframe.cc/FooNMC)
 
-![Dummy Link](url)
+- ![Create Reviews](https://wireframe.cc/6Dlx53)
 
-- Desktop Body
+- ![Read Reviews](https://wireframe.cc/XL2QiL)
 
-![Dummy Link](url)
+- ![Browse Reviews](https://wireframe.cc/1ecskb)
 
-- Desktop Resource Index
+#### Mobile
 
-![Dummy Link](url)
+- ![Mobile landing](https://wireframe.cc/9Uf1yg)
 
-- Desktop Resource Show
+#### Tablet
 
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
+- ![Tablet landing](https://wireframe.cc/E2Srqb)
 
 <br>
 
