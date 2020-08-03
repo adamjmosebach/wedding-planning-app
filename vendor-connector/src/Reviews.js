@@ -26,15 +26,38 @@ function Reviews() {
 
   if (records != []) {return (
       <div>
-        {records.map(record => {return (
-            record.fields.venueReview != '' && (
-              <div>
-                <h2>{record.fields.name} / {record.fields.email}</h2>
-                <h3>{record.fields.venue}</h3>
-                <p>{record.fields.venueReview}</p>
-              </div>
-            )
-        )})}
+      {records.map(record => (
+        <div>
+          {record.fields.venueReview != '' && (
+            <div>
+              <h2>{record.fields.name} / {record.fields.email}</h2>
+              <h3>{record.fields.venue} (Venue)</h3>
+              <p>{record.fields.venueReview}</p>
+            </div>
+          )}
+          {record.fields.djReview != '' && (
+            <div>
+              <h2>{record.fields.name} / {record.fields.email}</h2>
+              <h3>{record.fields.dj} (DJ)</h3>
+              <p>{record.fields.djReview}</p>
+            </div>
+          )}
+          {record.fields.photogReview != '' && (
+            <div>
+              <h2>{record.fields.name} / {record.fields.email}</h2>
+              <h3>{record.fields.photog} (Photographer)</h3>
+              <p>{record.fields.photogReview}</p>
+            </div>
+          )}
+          {record.fields.floristReview != '' && (
+            <div>
+              <h2>{record.fields.name} / {record.fields.email}</h2>
+              <h3>{record.fields.florist} (Florist)</h3>
+              <p>{record.fields.floristReview}</p>
+            </div>
+          )}
+        </div>
+        ))}
       </div>
   )} else {
     return <h1>Loading...</h1>;
