@@ -142,7 +142,6 @@ src
 
 #### Helper Functions
 
-> Use this section to document all helper functions– generic functions that can be reused in other applications.
 
 |  Function  | Description                                |
 | :--------: | :----------------------------------------- |
@@ -160,7 +159,7 @@ It would be nice if the user would be able to:
 - Email a reviewer directly from site
 - Give star ratings
 - Log in
-  - See thier favorites
+- See thier favorites
 
 
 <br>
