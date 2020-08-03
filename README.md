@@ -32,6 +32,7 @@
 
 ### Wireframes
 
+
 #### Desktop
 
 - [Desktop landing](https://wireframe.cc/FooNMC)
@@ -73,7 +74,7 @@ A user should be able to:
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |   React Router   | Allows for different paths for components
-| Axios | Makes requests for Airtable data |
+|  Axios  |  Makes requests for Airtable data  |
 
 <br>
 
@@ -83,7 +84,7 @@ A user should be able to:
 
 |    API     | Quality Docs? | Website       | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
-| WeatherAPI |      yes      | _example.com_ | _example.com/mickeymouse?s=movies&t=10_ |
+| Airtable |      Yes      | airtable.com | https://api.airtable.com/v0/appGtN1jraBuzwFTz/Table%201
 
 <br>
 
@@ -94,18 +95,14 @@ A user should be able to:
 ```
 src
 |__ assets/
-      |__ data-tests
       |__ fonts
-      |__ graphics
       |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
-      |__ Hero.jsx
-      |__ Ipsum.jsx
-      |__ Lorem.jsx
-      |__ CTA.jsx
-      |__ Footer.jsx
+|__ App.js
+|__ Header.js
+|__ Form.js
+|__ SelectVendor.js
+|__ DisplayVendor.js
+|__ Browse.js
 ```
 
 <br>
