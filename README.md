@@ -82,7 +82,7 @@ A user should be able to:
 
 > Use the Data Section to define the API(s) you will be consuming for your project, inluding sample URL queries.
 
-|    API     | Quality Docs? | Website       | Sample Query |                           |
+|    API     | Quality Docs? | Website       | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- 
 | Airtable |      Yes      | airtable.com | https://api.airtable.com/v0/appGtN1jraBuzwFTz/Table%201 |
 
