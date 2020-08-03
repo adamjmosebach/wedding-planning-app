@@ -1,4 +1,4 @@
-# Vendor Connector README
+# VENDOR CONNECTOR readme
 
 - [Project Planning](#Project-Planning)
   - [Overview](#Overview)
