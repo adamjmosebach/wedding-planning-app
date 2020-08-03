@@ -8,14 +8,13 @@ function Reviews() {
     async function apiGet() {
       try {
         const recordsObj = await axios.get(
-          'https://api.airtable.com/v0/appN3Jd5GDuwUR5wG/Table%201?maxRecords=3&view=Grid%20view',
+          'https://api.airtable.com/v0/appN3Jd5GDuwUR5wG/Table%201?&view=Grid%20view',
           {
             headers: {
               Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
             },
           }
         );
-        console.log(recordsObj.data.records);
         updateRecords(recordsObj.data.records);
       } catch (err) {
         console.log(err);
@@ -37,7 +36,7 @@ function Reviews() {
     }
   }
 
-  if (records != []) {return (
+  if (records !== []) {return (
       <div>
       {records.map(record => (
         <div>

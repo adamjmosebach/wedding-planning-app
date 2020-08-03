@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ReviewForm(props) {
+function FormComponent(props) {
 
   const updateVendor = props.vendorAction
   const updateReview = props.reviewAction
@@ -28,4 +28,4 @@ function ReviewForm(props) {
   )
 }
 
-export default ReviewForm
+export default FormComponent

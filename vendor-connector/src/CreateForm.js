@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import ReviewForm from './ReviewForm'
+import FormComponent from './FormComponent'
 import axios from 'axios'
+import { useHistory } from 'react-router-dom';
 
 function CreateForm() {
 
@@ -17,6 +18,8 @@ function CreateForm() {
   const [photogReview, updatePhotogReview] = useState('');
   const [floristReview, updateFloristReview] = useState('');
 
+  const history = useHistory();
+
   // Updates state values according to inputs
   function inputHandler(e, action) {
     e.preventDefault();
@@ -26,9 +29,10 @@ function CreateForm() {
   // Validates name and email. If correct, calls apiPost()
   function submitHandler(e) {
     e.preventDefault();
-    if (name != '') {
+    if (name !== '') {
       if (email.includes('@') && email.includes('.')) {
         apiPost();
+        history.push('/Reviews');
       } else {
         alert('Must provide valid email')
       }
@@ -37,6 +41,7 @@ function CreateForm() {
     }
   }
 
+  // Post data entered by user into Airtable
   async function apiPost() {
     try {
       const sendData = await axios.post('https://api.airtable.com/v0/appN3Jd5GDuwUR5wG/Table%201', {
@@ -58,7 +63,6 @@ function CreateForm() {
           'Content-Type': 'application/json'
         }
       })
-      console.log(sendData);
     } catch (err) {
       console.log(err);
     }
@@ -72,10 +76,10 @@ function CreateForm() {
           <label htmlFor='email'>Email:<input type='text' id='email' onChange={e=>inputHandler(e,updateEmail)} /></label>
         </div>
         <div className='vedor-fields'>
-          <ReviewForm field='Venue' vendorAction={updateVenue} reviewAction={updateVenueReview} />
-          <ReviewForm field='DJ' vendorAction={updateDj} reviewAction={updateDjReview} />
-          <ReviewForm field='Photography' vendorAction={updatePhotog} reviewAction={updatePhotogReview} />
-          <ReviewForm field='Florist' vendorAction={updateFlorist} reviewAction={updateFloristReview} />
+          <FormComponent field='Venue' vendorAction={updateVenue} reviewAction={updateVenueReview} />
+          <FormComponent field='DJ' vendorAction={updateDj} reviewAction={updateDjReview} />
+          <FormComponent field='Photography' vendorAction={updatePhotog} reviewAction={updatePhotogReview} />
+          <FormComponent field='Florist' vendorAction={updateFlorist} reviewAction={updateFloristReview} />
         </div>
         <input type='submit' value='Post My Reviews'/>
       </form>
