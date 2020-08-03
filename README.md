@@ -75,7 +75,6 @@ A user should be able to:
 
 #### Data
 
-> Use the Data Section to define the API(s) you will be consuming for your project, inluding sample URL queries.
 
 |    API     | Quality Docs? | Website       | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
@@ -107,7 +106,7 @@ src
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |   App    | functional |   n   |   n   | Backbone of the site - landing/navigation               |
-|    Header    | functional |   n   |   n   | Site brand / where you can go               |
+|    Header    | functional |   n   |   n   | Site brand / links               |
 |  Form  | functional |   y   |   n   | What the user must input to create reviews       |
 |   SelectVendor    |   functional    |   y   |   n   | Pick what vendors to research further      |
 | DisplayVendor | functional |   n   |   y   | Display selected vendor's reviews                 |
@@ -153,7 +152,7 @@ src
 ### Post-MVP
 
 
-It would be nice if the user could be able to:
+It would be nice if the user would be able to:
 - Select specific vendor reviews from a dropdown of reviewed vendors
 - View all of a user's past reviews
 - Email a reviewer directly from site
