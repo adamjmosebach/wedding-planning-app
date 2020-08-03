@@ -132,6 +132,7 @@ src
 | Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
 | Display reviews to browse | H | 1 hr | 0 hrs | TBD |
 | Advanced CSS | L | 8 hrs | 0 hrs | TBD |
+| Responsive Design | H | 5 hrs | 0 hrs | TBD |
 | *Create dropdown options from airtable records | M | 2 hrs | 0hrs | TBD |
 | *Display selected results | H | 1.5 hrs | 0 hrs | TBD |
 | *Send emails from site | L | 1 hr | 0 hrs | TBD |
@@ -139,9 +140,9 @@ src
 | *Star ratings | M | 3 hrs | 0 hrs | TBD |
 | *Logging in | M | 2 hrs | 0 hrs | TBD |
 | *Favorites | L | 2 hrs | 0 hrs | TBD |
-| TOTAL               |          |     31 hrs      |     0 hrs     |     TBD     |
+| TOTAL               |          |     36 hrs      |     0 hrs     |     TBD     |
 
--* Denotes Post-MVP 
+(* Denotes Post-MVP)
 
 <br>
 
