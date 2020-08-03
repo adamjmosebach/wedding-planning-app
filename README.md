@@ -131,9 +131,9 @@ src
 | Basic HTML     |    L     |     1.5 hrs      |     0 hrs     |    TBD    |
 | Basic CSS | L | 3 hrs | 0 hrs | TBD |
 | Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Create dropdown options from airtable records | 1.5 hrs | 0hrs | TBD |
-| Display selected results | 1.5 hrs | 0 hrs | TBD |
-| Display browsing | 1 hr | 0 hrs | TBD |
+| Create dropdown options from airtable records | M | 1.5 hrs | 0hrs | TBD |
+| Display selected results | H | 1.5 hrs | 0 hrs | TBD |
+| Display browsing | H | 1 hr | 0 hrs | TBD |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
 <br>
