@@ -18,10 +18,6 @@
 
 ## Project Planning
 
-> The Project Planning section should be completed for your project pitch with instructors.
->
-> To ensure correct Markdown, I recommend cloning this wiki and copy/pasting the raw template code.
-
 <br>
 
 ### Overview
@@ -121,9 +117,6 @@ src
 
 #### Component Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above. 
->
-> Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
@@ -152,7 +145,8 @@ src
 
 |  Function  | Description                                |
 | :--------: | :----------------------------------------- |
-| Capitalize | _Lorem ipsum dolor sit amet, consectetur._ |
+| capitalize | Capitalizes (e.g. - vendor names) |
+| generateForm | Generates form (Vendor + Review Section) |
 
 <br>
 
@@ -176,8 +170,8 @@ It would be nice if the user could be able to:
 
 ### Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> Looking forward to including a brief code snippet of functionality that I am proud of.
 
 ### Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
+> In the future I will use this section to list of all major issues encountered and their resolution, as well as areas I deviated from the project proposal and why.
