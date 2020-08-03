@@ -108,7 +108,6 @@ src
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
@@ -117,7 +116,7 @@ src
 |  Form  | functional |   y   |   n   | What the user must input to create reviews       |
 |   SelectVendor    |   functional    |   y   |   n   | Pick what vendors to research further      |
 | DisplayVendor | functional |   n   |   y   | Display selected vendor's reviews                 |
-|    Browse    | functional |   y   |   n   | Browse all reviews |
+|    Browse    | functional |   n   |   y   | Browse all reviews |
 
 <br>
 
@@ -129,8 +128,12 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Basic HTML     |    L     |     1.5 hrs      |     0 hrs     |    TBD    |
+| Basic CSS | L | 3 hrs | 0 hrs | TBD |
+| Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
+| Create dropdown options from airtable records | 1.5 hrs | 0hrs | TBD |
+| Display selected results | 1.5 hrs | 0 hrs | TBD |
+| Display browsing | 1 hr | 0 hrs | TBD |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
 <br>
