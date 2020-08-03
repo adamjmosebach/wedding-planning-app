@@ -1,4 +1,4 @@
-# PROJECT 2 README <!-- omit in toc -->
+# Vendor Connector README
 
 - [Project Planning](#Project-Planning)
   - [Overview](#Overview)
