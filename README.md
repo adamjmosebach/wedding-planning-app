@@ -134,9 +134,14 @@ src
 | Advanced CSS | L | 7 hrs | 0 hrs | TBD |
 | *Create dropdown options from airtable records | M | 1.5 hrs | 0hrs | TBD |
 | *Display selected results | H | 1.5 hrs | 0 hrs | TBD |
-| *Send emails from 
+| *Send emails from site | L | 1 hr | 0 hrs | TBD |
+| *View user's past reviews | L | 2 hrs | 0 hrs | TBD |
+| *Star ratings | M | 3 hrs | 0 hrs | TBD |
+| *Logging in | M | 2 hrs | 0 hrs | TBD |
+| *Favorites | L | 2 hrs | 0 hrs | TBD |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-/* Denotes Post-MVP 
+
+-* Denotes Post-MVP 
 
 <br>
 
@@ -152,10 +157,15 @@ src
 
 ### Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
-- Be able to select specific vendor reviews from 
-- _Utilize the Giphy API to welcome new users with funny gifs._
+It would be nice if the user could be able to:
+- Select specific vendor reviews from a dropdown of reviewed vendors
+- View all of a user's past reviews
+- Email a reviewer directly from site
+- Star ratings
+- Log in
+- Favorites
+
 
 <br>
 
