@@ -158,9 +158,9 @@ It would be nice if the user would be able to:
 - Select specific vendor reviews from a dropdown of reviewed vendors
 - View all of a user's past reviews
 - Email a reviewer directly from site
-- Star ratings
+- Give star ratings
 - Log in
-- Favorites
+  - See thier favorites
 
 
 <br>
