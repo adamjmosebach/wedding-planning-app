@@ -63,8 +63,7 @@ The **Vendor Connector**'s goal is simple: connect someone planning an event to 
 
 A user should be able to:
 - Create a review for each of their vendors
-- Be able to find reviews others have made about a vendor
-- Be able to browse vendor reviews in general
+- Be able to browse vendor reviews
 - Be able to connect with the person who made the review
 
 <br>
@@ -131,9 +130,9 @@ src
 | Basic HTML     |    L     |     1.5 hrs      |     0 hrs     |    TBD    |
 | Basic CSS | L | 3 hrs | 0 hrs | TBD |
 | Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Create dropdown options from airtable records | M | 1.5 hrs | 0hrs | TBD |
-| Display selected results | H | 1.5 hrs | 0 hrs | TBD |
 | Display browsing | H | 1 hr | 0 hrs | TBD |
+| *Create dropdown options from airtable records | M | 1.5 hrs | 0hrs | TBD |
+| *Display selected results | H | 1.5 hrs | 0 hrs | TBD |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
 <br>
