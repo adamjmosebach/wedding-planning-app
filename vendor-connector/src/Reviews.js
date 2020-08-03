@@ -24,38 +24,27 @@ function Reviews() {
     apiGet();
   }, []);
 
+  function displayRecords(recordInput, vendorVar, vendorReview, vendor) {
+    const record = recordInput.fields
+    if (record[vendorReview]) {
+      return (
+        <div>
+          <h2>{record.name} / {record.email}</h2>
+          <h3>{record[vendorVar]} ({vendor})</h3>
+          <p>{record[vendorReview]}</p>
+        </div>
+      )
+    }
+  }
+
   if (records != []) {return (
       <div>
       {records.map(record => (
         <div>
-          {record.fields.venueReview && (
-            <div>
-              <h2>{record.fields.name} / {record.fields.email}</h2>
-              <h3>{record.fields.venue} (Venue)</h3>
-              <p>{record.fields.venueReview}</p>
-            </div>
-          )}
-          {record.fields.djReview && (
-            <div>
-              <h2>{record.fields.name} / {record.fields.email}</h2>
-              <h3>{record.fields.dj} (DJ)</h3>
-              <p>{record.fields.djReview}</p>
-            </div>
-          )}
-          {record.fields.photogReview && (
-            <div>
-              <h2>{record.fields.name} / {record.fields.email}</h2>
-              <h3>{record.fields.photog} (Photographer)</h3>
-              <p>{record.fields.photogReview}</p>
-            </div>
-          )}
-          {record.fields.floristReview && (
-            <div>
-              <h2>{record.fields.name} / {record.fields.email}</h2>
-              <h3>{record.fields.florist} (Florist)</h3>
-              <p>{record.fields.floristReview}</p>
-            </div>
-          )}
+          {displayRecords(record, 'venue', 'venueReview', 'Venue')}
+          {displayRecords(record, 'dj', 'djReview', 'DJ')}
+          {displayRecords(record, 'photog', 'photogReview', 'Photographer')}
+          {displayRecords(record, 'florist', 'floristReview', 'Florist')}
         </div>
         ))}
       </div>
