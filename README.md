@@ -16,6 +16,8 @@
   - [Code Showcase](#Code-Showcase)
   - [Code Issues & Resolutions](#Code-Issues--Resolutions)
 
+<br>
+
 ## Project Planning
 
 <br>
@@ -26,7 +28,7 @@
 
 <br>
 
-### Wireframes
+### Wireframes:
 
 
 #### Desktop
