@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom';
 import Nav from './Nav';
 import Home from './Home';
 import CreateForm from './CreateForm'
+import Reviews from './Reviews'
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path='/create'>
           <CreateForm />
+        </Route>
+        <Route path='/reviews'>
+          <Reviews />
         </Route>
       </main>
     </div>

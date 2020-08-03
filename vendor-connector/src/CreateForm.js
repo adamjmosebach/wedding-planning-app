@@ -44,7 +44,13 @@ function CreateForm() {
           name: name,
           email: email,
           venue: venue,
-          venueReview: venueReview
+          venueReview: venueReview,
+          dj: dj,
+          djReview: djReview,
+          photog: photog,
+          photogReview: photogReview,
+          florist: florist,
+          floristReview: floristReview
         }
       }, {
         headers: {
