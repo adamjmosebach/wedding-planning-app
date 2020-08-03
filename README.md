@@ -90,7 +90,6 @@ A user should be able to:
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app.
 
 ```
 src
@@ -113,11 +112,12 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|   App    | functional |   n   |   n   | Backbone of the site - landing/navigation               |
+|    Header    | functional |   n   |   n   | Site brand / where you can go               |
+|  Form  | functional |   y   |   n   | What the user must input to create reviews       |
+|   SelectVendor    |   functional    |   y   |   n   | Pick what vendors to research further      |
+| DisplayVendor | functional |   n   |   y   | Display selected vendor's reviews                 |
+|    Browse    | functional |   y   |   n   | Browse all reviews |
 
 <br>
 
