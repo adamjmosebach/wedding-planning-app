@@ -130,10 +130,13 @@ src
 | Basic HTML     |    L     |     1.5 hrs      |     0 hrs     |    TBD    |
 | Basic CSS | L | 3 hrs | 0 hrs | TBD |
 | Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Display browsing | H | 1 hr | 0 hrs | TBD |
+| Display reviews to browse | H | 1 hr | 0 hrs | TBD |
+| Advanced CSS | L | 7 hrs | 0 hrs | TBD |
 | *Create dropdown options from airtable records | M | 1.5 hrs | 0hrs | TBD |
 | *Display selected results | H | 1.5 hrs | 0 hrs | TBD |
+| *Send emails from 
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+/* Denotes Post-MVP 
 
 <br>
 
@@ -151,7 +154,7 @@ src
 
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
-- _Add user account and auth capabilities._
+- Be able to select specific vendor reviews from 
 - _Utilize the Giphy API to welcome new users with funny gifs._
 
 <br>
