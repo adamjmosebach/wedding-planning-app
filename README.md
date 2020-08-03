@@ -128,18 +128,18 @@ src
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Basic HTML     |    L     |     1.5 hrs      |     0 hrs     |    TBD    |
-| Basic CSS | L | 3 hrs | 0 hrs | TBD |
+| Basic CSS | L | 4 hrs | 0 hrs | TBD |
 | Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
 | Display reviews to browse | H | 1 hr | 0 hrs | TBD |
-| Advanced CSS | L | 7 hrs | 0 hrs | TBD |
-| *Create dropdown options from airtable records | M | 1.5 hrs | 0hrs | TBD |
+| Advanced CSS | L | 8 hrs | 0 hrs | TBD |
+| *Create dropdown options from airtable records | M | 2 hrs | 0hrs | TBD |
 | *Display selected results | H | 1.5 hrs | 0 hrs | TBD |
 | *Send emails from site | L | 1 hr | 0 hrs | TBD |
 | *View user's past reviews | L | 2 hrs | 0 hrs | TBD |
 | *Star ratings | M | 3 hrs | 0 hrs | TBD |
 | *Logging in | M | 2 hrs | 0 hrs | TBD |
 | *Favorites | L | 2 hrs | 0 hrs | TBD |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| TOTAL               |          |     31 hrs      |     0 hrs     |     TBD     |
 
 -* Denotes Post-MVP 
 
