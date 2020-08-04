@@ -8,6 +8,7 @@ function Reviews() {
   const [djVisible, updateDjVisible] = useState('visible');
   const [photogVisible, updatePhotogVisible] = useState('visible');
   const [floristVisible, updateFloristVisible] = useState('visible');
+  const [vendorTypeSelect, updateVendorTypeSelect] = useState('venue')
 
   // Get the records from Airtable
   useEffect(() => {
@@ -44,7 +45,7 @@ function Reviews() {
   }
 
   // If records exist, call displayRecords() to display records for each kind of vendor &
-  if (records !== []) {return (
+  if (records.length>0) {return (
     <div>
       <label>Venues:<input type='checkbox' id='hideVenue' name='venueCheckbox' value='visible' defaultChecked onChange={e => e.target.checked ? updateVenueVisible('visible') : updateVenueVisible('hidden')} /></label>
 
@@ -52,7 +53,22 @@ function Reviews() {
 
       <label> Photographers:<input type='checkbox' id='hidePhotogs' name='photogsChecked' value='visible' defaultChecked onChange={e => e.target.checked ? updatePhotogVisible('visible') : updatePhotogVisible('hidden')} /></label>
 
-      <label> Florists:<input type='checkbox' id='hideFloriists' name='floristCheckbox' value='visible' defaultChecked onChange={e => e.target.checked ? updateFloristVisible('visible') : updateFloristVisible('hidden')}/></label>
+      <label> Florists:<input type='checkbox' id='hideFloriists' name='floristCheckbox' value='visible' defaultChecked onChange={e => e.target.checked ? updateFloristVisible('visible') : updateFloristVisible('hidden')} /></label>
+      
+      <select onChange={e => updateVendorTypeSelect(e.target.value)}>
+        <option value=''>Select a Vendor Type</option>
+        <option value='venue'>Venue</option>
+        <option value='dj'>DJ</option>
+        <option value='photog'>Photographer</option>
+        <option value='florist'>Florist</option>
+      </select>
+
+      <select>
+        <option value=''>Select a Specific Vendor</option>
+        {records.map(record => {
+          return record.fields[vendorTypeSelect] && <option value={record.fields[vendorTypeSelect]}>{record.fields[vendorTypeSelect]}</option>
+        })}
+      </select>
       
       {records.map(record => (
         <div>
