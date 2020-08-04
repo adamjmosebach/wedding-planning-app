@@ -145,8 +145,8 @@ src
 
 |  Function  | Description                                |
 | :--------: | :----------------------------------------- |
-| capitalize | Capitalizes (e.g. - vendor names) |
-| generateForm | Generates form (Vendor + Review Section) |
+| displayRecords | Displays records as per its props params |
+| submitHandler | Validates name and email, then calls a GET function |
 
 <br>
 
