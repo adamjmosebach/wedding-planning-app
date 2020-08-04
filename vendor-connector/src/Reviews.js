@@ -4,6 +4,7 @@ import axios from 'axios';
 function Reviews() {
   const [records, updateRecords] = useState([]);
 
+  // Get the records from Airtable
   useEffect(() => {
     async function apiGet() {
       try {
@@ -23,12 +24,13 @@ function Reviews() {
     apiGet();
   }, []);
 
+  // Helper function to display a review
   function displayRecords(recordInput, vendorVar, vendorReview, vendor) {
     const record = recordInput.fields
     if (record[vendorReview]) {
       return (
         <div>
-          <h2>{record.name} / {record.email}</h2>
+          <h2>{record.name} / <a href={`mailto:${record.email}`}>{record.email}</a></h2>
           <h3>{record[vendorVar]} ({vendor})</h3>
           <p>{record[vendorReview]}</p>
         </div>
@@ -36,6 +38,7 @@ function Reviews() {
     }
   }
 
+  // If records exist, call displayRecords() to display records for each kind of vendor
   if (records !== []) {return (
       <div>
       {records.map(record => (

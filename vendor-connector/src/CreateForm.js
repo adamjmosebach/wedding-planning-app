@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom';
 
 function CreateForm() {
 
+  // I do declare!
   const [name, updateName] = useState('');
   const [email, updateEmail] = useState('');
 
@@ -20,7 +21,8 @@ function CreateForm() {
 
   const history = useHistory();
 
-  // Updates state values according to inputs
+
+  // Updates state values of inputs on change
   function inputHandler(e, action) {
     e.preventDefault();
     action(e.target.value);
@@ -68,6 +70,7 @@ function CreateForm() {
     }
   }
 
+  // Display the create page utilizing a FormComponent for each kind of vendor
   return (
     <div>
       <form onSubmit={submitHandler}>

@@ -17,7 +17,7 @@ function FormComponent(props) {
     updateReview(e.target.value);
   }
 
-  //reutrns a venue and venueReview field
+  // Reutrns a venue and venueReview field based on props
   return (
     <div>
       <label htmlFor={props.field}>{props.field}
