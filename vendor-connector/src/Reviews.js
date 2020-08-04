@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Reviews.css'
+import { Route, Link } from 'react-router-dom'
+import SpecificVendor from './SpecificVendor'
+import DisplayARecord from './DisplayARecord'
 
 function Reviews() {
   const [records, updateRecords] = useState([]);
@@ -8,7 +11,7 @@ function Reviews() {
   const [djVisible, updateDjVisible] = useState('visible');
   const [photogVisible, updatePhotogVisible] = useState('visible');
   const [floristVisible, updateFloristVisible] = useState('visible');
-  const [vendorTypeSelect, updateVendorTypeSelect] = useState('venue')
+
 
   // Get the records from Airtable
   useEffect(() => {
@@ -22,6 +25,7 @@ function Reviews() {
             },
           }
         );
+        //console.log(recordsObj.data.records)
         updateRecords(recordsObj.data.records);
       } catch (err) {
         console.log(err);
@@ -30,23 +34,10 @@ function Reviews() {
     apiGet();
   }, []);
 
-  // Helper function to display a review
-  function displayRecords(recordInput, vendorVar, vendorReview, vendor, vendorVisible) {
-    const record = recordInput.fields
-    if (record[vendorReview]) {
-      return (
-        <div className={`${vendorVisible}`}>
-          <h2>{record.name} / <a href={`mailto:${record.email}?subject=Your%20${record[vendorVar]}%20review%20on%20Vendor%20Connector`}>{record.email}</a></h2>
-          <h3>{record[vendorVar]} ({vendor})</h3>
-          <p>{record[vendorReview]}</p>
-        </div>
-      )
-    }
-  }
 
-  // If records exist, call displayRecords() to display records for each kind of vendor &
   if (records.length>0) {return (
     <div>
+
       <label>Venues:<input type='checkbox' id='hideVenue' name='venueCheckbox' value='visible' defaultChecked onChange={e => e.target.checked ? updateVenueVisible('visible') : updateVenueVisible('hidden')} /></label>
 
       <label> DJs:<input type='checkbox' id='hideDj' name='djCheckbox' value='visible' defaultChecked onChange={e => e.target.checked ? updateDjVisible('visible') : updateDjVisible('hidden')} /></label>
@@ -55,30 +46,19 @@ function Reviews() {
 
       <label> Florists:<input type='checkbox' id='hideFloriists' name='floristCheckbox' value='visible' defaultChecked onChange={e => e.target.checked ? updateFloristVisible('visible') : updateFloristVisible('hidden')} /></label>
       
-      <select onChange={e => updateVendorTypeSelect(e.target.value)}>
-        <option value=''>Select a Vendor Type</option>
-        <option value='venue'>Venue</option>
-        <option value='dj'>DJ</option>
-        <option value='photog'>Photographer</option>
-        <option value='florist'>Florist</option>
-      </select>
-
-      <select>
-        <option value=''>Select a Specific Vendor</option>
-        {records.map(record => {
-          return record.fields[vendorTypeSelect] && <option value={record.fields[vendorTypeSelect]}>{record.fields[vendorTypeSelect]}</option>
-        })}
-      </select>
+      <Link to='/SpecificVendor'>Specific Vendor</Link>
       
+
       {records.map(record => (
         <div>
-          {displayRecords(record, 'venue', 'venueReview', 'Venue', venueVisible)}
-          {displayRecords(record, 'dj', 'djReview', 'DJ', djVisible)}
-          {displayRecords(record, 'photog', 'photogReview', 'Photographer', photogVisible)}
-          {displayRecords(record, 'florist', 'floristReview', 'Florist', floristVisible)}
+          <DisplayARecord record={record} vendorVar='venue' vendorReview='venueReview' vendor='Venue' vendorVisible={venueVisible} />
+          <DisplayARecord record={record} vendorVar='dj' vendorReview='djReview' vendor='DJ' vendorVisible={djVisible} />
+          <DisplayARecord record={record} vendorVar='photog' vendorReview='photogReview' vendor='Photographer' vendorVisible={photogVisible} />
+          <DisplayARecord record={record} vendorVar='florist' vendorReview='floristReview' vendor='Florist' vendorVisible={floristVisible} />
         </div>
-        ))}
-      </div>
+      ))}
+      
+    </div>
   )} else {
     return <h1>Loading...</h1>;
   }

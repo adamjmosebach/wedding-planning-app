@@ -3,8 +3,9 @@ import './App.css';
 import { Route } from 'react-router-dom';
 import Nav from './Nav';
 import Home from './Home';
-import CreateForm from './CreateForm'
-import Reviews from './Reviews'
+import CreateForm from './CreateForm';
+import Reviews from './Reviews';
+import SpecificVendor from './SpecificVendor';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route path='/reviews'>
           <Reviews />
+        </Route>
+        <Route path='/SpecificVendor'>
+          <SpecificVendor />
         </Route>
       </main>
     </div>
