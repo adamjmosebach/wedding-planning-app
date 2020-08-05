@@ -9,9 +9,9 @@ import SpecificVendor from './SpecificVendor';
 
 function App() {
   return (
-    <div className='main'>
+    <div className='main-div'>
       <Nav /> 
-      <main>
+      <main className='main'>
         <Route path='/' exact>
           <Home />
         </Route>

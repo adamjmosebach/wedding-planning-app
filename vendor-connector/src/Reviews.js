@@ -35,18 +35,19 @@ function Reviews() {
 
 
   if (records.length>0) {return (
-    <div>
+    <div className='reviews-div'>
+      <div className='check-boxes'>
+      <label class='check-opt'>Venues:<input type='checkbox' id='hideVenue' name='venueCheckbox' value='visible' defaultChecked onChange={e => e.target.checked ? updateVenueVisible('visible') : updateVenueVisible('hidden')} /></label>
 
-      <label>Venues:<input type='checkbox' id='hideVenue' name='venueCheckbox' value='visible' defaultChecked onChange={e => e.target.checked ? updateVenueVisible('visible') : updateVenueVisible('hidden')} /></label>
+      <label class='check-opt'> DJs:<input type='checkbox' id='hideDj' name='djCheckbox' value='visible' defaultChecked onChange={e => e.target.checked ? updateDjVisible('visible') : updateDjVisible('hidden')} /></label>
 
-      <label> DJs:<input type='checkbox' id='hideDj' name='djCheckbox' value='visible' defaultChecked onChange={e => e.target.checked ? updateDjVisible('visible') : updateDjVisible('hidden')} /></label>
+      <label class='check-opt'> Photographers:<input type='checkbox' id='hidePhotogs' name='photogsChecked' value='visible' defaultChecked onChange={e => e.target.checked ? updatePhotogVisible('visible') : updatePhotogVisible('hidden')} /></label>
 
-      <label> Photographers:<input type='checkbox' id='hidePhotogs' name='photogsChecked' value='visible' defaultChecked onChange={e => e.target.checked ? updatePhotogVisible('visible') : updatePhotogVisible('hidden')} /></label>
-
-      <label> Florists:<input type='checkbox' id='hideFloriists' name='floristCheckbox' value='visible' defaultChecked onChange={e => e.target.checked ? updateFloristVisible('visible') : updateFloristVisible('hidden')} /></label>
+      <label class='check-opt'> Florists:<input type='checkbox' id='hideFloriists' name='floristCheckbox' value='visible' defaultChecked onChange={e => e.target.checked ? updateFloristVisible('visible') : updateFloristVisible('hidden')} /></label>
       
-      <Link to='/SpecificVendor'>Specific Vendor</Link>
+      <Link to='/SpecificVendor' className='specific-link'>Specific Vendor</Link>
       
+      </div>
 
       {records.map(record => (
         <div>

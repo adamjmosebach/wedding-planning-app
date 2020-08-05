@@ -1,5 +1,9 @@
-.main {
+.main-div {
   background-image: linear-gradient(to right, rgb(24, 7, 33) , #63dbe8);
+  height: 110vh;
   width: 100vw;
-  height: 130vh;
+  background-attachment: fixed;
+}
+.main {
+  
 }
