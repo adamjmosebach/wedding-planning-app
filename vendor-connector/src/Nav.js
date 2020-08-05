@@ -5,7 +5,7 @@ function Nav() {
   return (
     <div>
       <Link to='/'><h1>Vendor Connector</h1></Link>
-      
+       
     </div>
   )
 }
