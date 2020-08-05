@@ -75,7 +75,7 @@ function SpecificVendor() {
         ))}
       </select>
 
-      
+       
       {/* Displaying records that match criteria */}
       {allRecords.map(
         (record) =>
