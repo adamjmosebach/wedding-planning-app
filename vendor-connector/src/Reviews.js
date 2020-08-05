@@ -11,7 +11,7 @@ function Reviews() {
   const [djVisible, updateDjVisible] = useState('visible');
   const [photogVisible, updatePhotogVisible] = useState('visible');
   const [floristVisible, updateFloristVisible] = useState('visible');
-
+ 
 
   // Get the records from Airtable
   useEffect(() => {

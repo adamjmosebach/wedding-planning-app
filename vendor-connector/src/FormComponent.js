@@ -10,7 +10,7 @@ function FormComponent(props) {
     e.preventDefault();
     updateVendor(e.target.value);
   }
-
+ 
   // Makes vendorReview field change its state variable in parent component
   function inputReviewHandler(e) {
     e.preventDefault();

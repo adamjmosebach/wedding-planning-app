@@ -54,5 +54,5 @@ useEffect(() => {
     </div>
   )
 }
-
+ 
 export default SpecificVendor
