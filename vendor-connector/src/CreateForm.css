@@ -1,13 +1,17 @@
 .createForm {
-  background-image: './images/placecard1.jpg';
+  background-color: rgba(255, 255, 255, .75);
   background-size: cover;
   padding: 70px;
   position: relative;
   display: flex;
   justify-content: right;
   width: 440px;
-  border: 2px solid black;
+  border: 8px solid white;
   margin: 30px auto;
+  background-image: linear-gradient(to bottom right,rgba(250, 200, 208, 0.75)  ,  rgba(186, 236, 245, 0.5),rgba(159, 182, 194, 0.5) );
+  border-radius: 15px;
+  box-shadow: 10px 10px grey;
+  color: rgb(45, 78, 186);
 }
 .review-field {
   margin-left: 10px;
@@ -50,7 +54,7 @@
   margin-right: 10px;
 }
 .vendor-fields {
-  margin-top: 50px;;
+  margin-top: 60px;;
 }
 .your-info-headings {
   display: flex;
@@ -59,12 +63,15 @@
 }
 #submitter {
   margin-left: 160px;
-  background-color: rgb(38, 70, 174);
+  background-color: rgb(144, 48, 159);
   color: white;
   padding: 5px 10px;
   border-radius: 10px;
   font-weight: 600;
 }
 .form-heading {
-  color: rgb(25, 53, 146);
+  color: rgb(192, 45, 215);
+}
+.your-info-headings {
+  font-weight: 500;
 }

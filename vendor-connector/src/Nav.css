@@ -1,9 +1,13 @@
 .navBar {
-  background-image: linear-gradient(to right, rgb(7, 13, 33) , rgb(75, 213, 237));
-  height: 110px;
-  color: white;
+  background-image: linear-gradient(to right, rgb(24, 7, 33) , #63dbe8);
+  height: 150px;
+  
 }
 .logo {
   height: 110px;
   margin-left: 20px;
+  border: 1px none white;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 2px 2px white;
 }

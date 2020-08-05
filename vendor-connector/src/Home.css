@@ -1,0 +1,19 @@
+.home-option {
+  background-color: rgb(245, 232, 159);
+  width: 80vw;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 300px;;
+  height: 75px;
+  line-height: 75px;
+  box-shadow: 5px 5px 5px 5px silver;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  color: rgb(197, 61, 204);
+  text-decoration: none;
+}
+.home-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
