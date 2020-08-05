@@ -10,7 +10,7 @@ function FormComponent(props) {
     e.preventDefault();
     updateVendor(e.target.value);
   }
- 
+  
   // Makes vendorReview field change its state variable in parent component
   function inputReviewHandler(e) {
     e.preventDefault();
@@ -19,10 +19,10 @@ function FormComponent(props) {
 
   // Reutrns a venue and venueReview field based on props
   return (
-    <div>
-      <label htmlFor={props.field}>{props.field}
+    <div className='form-component'>
+      <label htmlFor={props.field} className='labels'><strong>{`${props.field} `}</strong> </label>
         <input type='text' id={props.field} onChange={inputVendorHandler} />
-      </label>
+      
       <textarea className='review-field' onChange={inputReviewHandler} />
     </div>
   )

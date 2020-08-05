@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import FormComponent from './FormComponent'
 import axios from 'axios'
 import { useHistory } from 'react-router-dom';
+import placecard1 from './images/placecard1.jpg'
+import './CreateForm.css'
 
 function CreateForm() {
 
@@ -72,19 +74,26 @@ function CreateForm() {
 
   // Display the create page utilizing a FormComponent for each kind of vendor
   return (
-    <div>
-      <form onSubmit={submitHandler}>
+    <div className='createForm'>
+      <form onSubmit={submitHandler} className='form'>
         <div className='name-email-fields'>
-          <label htmlFor='name'>Name:<input type='text' id='name' onChange={e=>inputHandler(e,updateName)} /></label>
-          <label htmlFor='email'>Email:<input type='text' id='email' onChange={e=>inputHandler(e,updateEmail)} /></label>
+          <h3 className='form-heading'>~Your Info~</h3>
+          <div className='your-info-headings'>
+            <label htmlFor='name'>Name: <input type='text' id='name' onChange={e=>inputHandler(e,updateName)} /></label>
+            <label htmlFor='email'>Email: <input type='text' id='email' onChange={e => inputHandler(e, updateEmail)} /></label>
+          </div>
         </div>
-        <div className='vedor-fields'>
-          <FormComponent field='Venue' vendorAction={updateVenue} reviewAction={updateVenueReview} />
-          <FormComponent field='DJ' vendorAction={updateDj} reviewAction={updateDjReview} />
-          <FormComponent field='Photography' vendorAction={updatePhotog} reviewAction={updatePhotogReview} />
-          <FormComponent field='Florist' vendorAction={updateFlorist} reviewAction={updateFloristReview} />
+        <div className='vendor-fields'>
+          <h3 className='form-heading'>~Vendor Info~</h3>
+          <h4 className='v-name-review'><span className='formSubHeading' id='vendor-name-heading'>Vendor Name</span><span className='formSubHeading'>Review</span></h4>
+          <div className='vendor-form'>
+            <FormComponent field='Venue' vendorAction={updateVenue} reviewAction={updateVenueReview} />
+            <FormComponent field='DJ' vendorAction={updateDj} reviewAction={updateDjReview} />
+            <FormComponent field='Photography' vendorAction={updatePhotog} reviewAction={updatePhotogReview} />
+            <FormComponent field='Florist' vendorAction={updateFlorist} reviewAction={updateFloristReview} />
+          </div>
         </div>
-        <input type='submit' value='Post My Reviews'/>
+        <input type='submit' value='Post My Reviews' id='submitter'/>
       </form>
     </div>
   )

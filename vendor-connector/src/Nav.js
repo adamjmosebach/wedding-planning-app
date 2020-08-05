@@ -1,15 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Nav.css'
+import logo from './images/logo.png'
 
 function Nav() {
   return (
-    <div>
-      <Link to='/'><h1>Vendor Connector</h1></Link>
-<<<<<<< HEAD
-      <div style={{backgroundColor:'grey'}}
-=======
+    <div className='navBar'>
+      <Link to='/'><img src={logo} className='logo' alt='logo'/></Link>
+      {/* <img src={'images/Me.jpg'}/> */}
        
->>>>>>> b85919e4c6a2cd35f84d7fc9b78ab73eecf2487c
     </div>
   )
 }

@@ -1,0 +1,70 @@
+.createForm {
+  background-image: './images/placecard1.jpg';
+  background-size: cover;
+  padding: 70px;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  width: 440px;
+  border: 2px solid black;
+  margin: 30px auto;
+}
+.review-field {
+  margin-left: 10px;
+  position: relative;
+  top: 30px;
+  height: 40px;
+}
+.vendor-form {
+  display: flex;
+  text-align: right;
+  /* border: 1px solid red; */
+  flex-direction: column;
+  width: 500px;
+  margin-left: -65px;
+  padding-bottom: 50px;
+}
+.form-component {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.labels {
+  margin-right: 10px;
+}
+.v-name-review {
+  text-align: right;
+  height: 20px;
+  margin-top: -10px;
+  margin-bottom: 5px;;
+}
+.formSubHeading {
+  /* padding-right: 40px; */
+  display: inline-block;
+  width: 130px;
+  margin: 15px 50px 5px 0;
+  text-decoration: underline;
+  padding-right: 10px;
+  /* border: 1px solid blue; */
+}
+#vendor-name-heading {
+  margin-right: 10px;
+}
+.vendor-fields {
+  margin-top: 50px;;
+}
+.your-info-headings {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+#submitter {
+  margin-left: 160px;
+  background-color: rgb(38, 70, 174);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.form-heading {
+  color: rgb(25, 53, 146);
+}
