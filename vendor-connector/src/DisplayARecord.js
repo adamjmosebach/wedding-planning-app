@@ -7,7 +7,7 @@ function DisplayARecord(props) {
   const vendorReview = props.vendorReview
   const vendor = props.vendor
   const vendorVisible = props.vendorVisible
-
+ 
 
     if (record[vendorReview]) {
       return (

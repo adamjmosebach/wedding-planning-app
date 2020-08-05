@@ -10,7 +10,7 @@ import SpecificVendor from './SpecificVendor';
 function App() {
   return (
     <div>
-      <Nav />
+      <Nav /> 
       <main>
         <Route path='/' exact>
           <Home />

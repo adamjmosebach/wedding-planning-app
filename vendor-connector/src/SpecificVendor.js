@@ -92,5 +92,10 @@ function SpecificVendor() {
     </div>
   );
 }
+<<<<<<< HEAD
 
 export default SpecificVendor;
+=======
+ 
+export default SpecificVendor
+>>>>>>> b85919e4c6a2cd35f84d7fc9b78ab73eecf2487c
