@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Reviews.css'
-import { Route, Link } from 'react-router-dom'
-import SpecificVendor from './SpecificVendor'
+import { Link } from 'react-router-dom'
 import DisplayARecord from './DisplayARecord'
 
 function Reviews() {

@@ -3,10 +3,12 @@ import axios from 'axios';
 import DisplayARecord from './DisplayARecord';
 
 function SpecificVendor() {
+
   const [vendorTypeSelect, updateVendorTypeSelect] = useState('');
   const [vendorNameSelect, updateVendorNameSelect] = useState('');
   const [allRecords, updateAllRecords] = useState([]);
   const [options, updateOptions] = useState([]);
+
 
   // Get the records from Airtable
   useEffect(() => {
@@ -29,9 +31,14 @@ function SpecificVendor() {
     apiGet();
   }, []);
 
+
   useEffect(() => {
+    updateVendorNameSelect('');
     const newOptions = allRecords.reduce((acc, record) => {
-      if (record.fields[vendorTypeSelect] && !acc.includes(record.fields[vendorTypeSelect])) {
+      if (
+        record.fields[vendorTypeSelect] &&
+        !acc.includes(record.fields[vendorTypeSelect])
+      ) {
         acc.push(record.fields[vendorTypeSelect]);
       }
       return acc;
@@ -39,44 +46,47 @@ function SpecificVendor() {
     updateOptions(newOptions);
   }, [vendorTypeSelect]);
 
+
   return (
     <div>
-      <select onChange={(e) => updateVendorTypeSelect(e.target.value)}>
+
+      {/* Populate Vendor Type Dropdown */}
+      <select
+        onChange={(e) => {
+          updateVendorNameSelect('')
+          updateVendorTypeSelect(e.target.value);
+          console.log('vendorNameSelect = ', vendorNameSelect);
+        }}>
         <option value=''>Select a Vendor Type</option>
         <option value='venue'>Venue</option>
         <option value='dj'>DJ</option>
         <option value='photog'>Photographer</option>
         <option value='florist'>Florist</option>
       </select>
-      {/* 
-      <select onChange={e => updateVendorNameSelect(e.target.value)}> */}
 
-      {/* {specificRecords=['Select a Specific Vendor']} */}
+      
+      {/* Populate Vendor Name Dropdown */}
+      <select onChange={(e) => updateVendorNameSelect(e.target.value)} value={vendorNameSelect}>
+        <option value='' defaultValue>
+          Select a Specific Vendor
+        </option>
+        {options.map((vendor) => (
+          <option value={vendor}>{vendor}</option>
+        ))}
+      </select>
 
-      {/* {allRecords.map(record => {
-          if (record.fields[vendorTypeSelect] && !specificRecords.includes(record.fields[vendorTypeSelect])) {
-            specificRecords.push(record.fields[vendorTypeSelect])
-          }
-        })}
-        {console.log('specificRecords = ', specificRecords)} */}
-
-      {/* {specificRecords.map(record => <option value={`${record}`}>{`${record}`}</option>)}
-      </select> */}
-
-      {options.length >= 0 && (
-        <select onChange={(e) => updateVendorNameSelect(e.target.value)}>
-          <option value='' selected>Select a Specific Vendor</option>
-          {options.map((vendor) => {
-            return <option value={vendor}>{vendor}</option>;
-          })}
-        </select>
-      )}
-
+      
       {/* Displaying records that match criteria */}
       {allRecords.map(
         (record) =>
           record.fields[vendorTypeSelect] === vendorNameSelect && (
-            <DisplayARecord record={record} vendorVar={vendorTypeSelect} vendorReview={`${vendorTypeSelect}Review`} vendor='' vendorVisible='visible' />
+            <DisplayARecord
+              record={record}
+              vendorVar={vendorTypeSelect}
+              vendorReview={`${vendorTypeSelect}Review`}
+              vendor=''
+              vendorVisible='visible'
+            />
           )
       )}
     </div>
