@@ -1,4 +1,4 @@
-.createForm {
+.create-form {
   background-color: rgba(252, 222, 251, 0.75);
   background-size: cover;
   padding: 70px;
@@ -41,7 +41,7 @@
   margin-top: -10px;
   margin-bottom: 5px;;
 }
-.formSubHeading {
+.form-subheading {
   /* padding-right: 40px; */
   display: inline-block;
   width: 130px;
@@ -84,8 +84,20 @@
   margin: -20px 0;
 }
 
-@media screen and (max-width: 380px) {
-  .createForm {
-    width: 90%;
+@media screen and (max-width: 450px) {
+  .create-form {
+    width: 50vw;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .your-info-headings {
+    display: flex;
+    flex-direction: column;
+  }
+  .vendor-fields {
+    display: flex;
+    flex-direction: column;
   }
 }

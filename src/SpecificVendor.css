@@ -23,7 +23,7 @@
   margin: 13px auto;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 436px) {
   body {
     position: relative;
   }
@@ -36,7 +36,7 @@
     top: 8px;
   }
   .specific-results {
-    margin: 0 5px;
+    margin: 35px 5px;
     align-self: left;
   }
   

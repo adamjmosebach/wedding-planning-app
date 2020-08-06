@@ -74,7 +74,7 @@ function CreateForm() {
 
   // Display the create page utilizing a FormComponent for each kind of vendor
   return (
-    <div className='createForm'>
+    <div className='create-form'>
       <form onSubmit={submitHandler} className='form'>
         <div className='name-email-fields'>
           <h3 className='form-heading'>~Your Info~</h3>
@@ -85,7 +85,7 @@ function CreateForm() {
         </div>
         <div className='vendor-fields'>
           <h3 className='form-heading'>~Vendor Info~</h3>
-          <h4 className='v-name-review'><span className='formSubHeading' id='vendor-name-heading'>Vendor Name</span><span className='formSubHeading'>Review</span></h4>
+          <h4 className='v-name-review'><span className='form-subheading' id='vendor-name-heading'>Vendor Name</span><span className='form-subheading'>Review</span></h4>
           <div className='vendor-form'>
             <FormComponent field='Venue' vendorAction={updateVenue} reviewAction={updateVenueReview} />
             <FormComponent field='DJ' vendorAction={updateDj} reviewAction={updateDjReview} />
