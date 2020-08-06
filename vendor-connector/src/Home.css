@@ -10,10 +10,12 @@
   margin-top: 50px;
   margin-bottom: 60px;
   color: rgb(197, 61, 204);
-  text-decoration: none;
 }
 .home-div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.create-link {
+  text-decoration: none;
 }
