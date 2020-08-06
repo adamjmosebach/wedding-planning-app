@@ -45,7 +45,7 @@
   box-shadow: 4px 4px 3px 2px rgb(94, 58, 90);
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 426px) {
   .reviews-div {
     position: relative;
     width: 100vw;
