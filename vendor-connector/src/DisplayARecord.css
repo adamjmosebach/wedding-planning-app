@@ -1,0 +1,14 @@
+.connect-link {
+  text-decoration: none;
+  color: rgb(180, 12, 206);
+  background-color: rgb(64, 213, 213);
+  padding: 2px 8px;
+  border-radius: 40px;
+  font-size: 14px;
+  border: 1px solid rgb(179, 56, 173);
+  transition: linear .2s;
+}
+.connect-link:hover {
+  font-size: 16px;
+  box-shadow: 2px 2px grey;
+}

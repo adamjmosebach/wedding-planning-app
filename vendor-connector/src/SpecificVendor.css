@@ -7,7 +7,12 @@
   padding: 5px;
   border: 1px solid white;
   border-radius: 10px;
-  box-shadow: 4px 4px rgb(249, 229, 244);
+  box-shadow: 2px 2px rgb(249, 229, 244);
+  transition: .25s;
+}
+.selects-div:hover {
+  box-shadow: 3px 3px rgb(255, 255, 255);
+  transform: scale(1.02);
 }
 .select {
   margin: 8px;
