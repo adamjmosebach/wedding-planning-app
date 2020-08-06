@@ -27,3 +27,15 @@
   box-shadow: 4px 4px 2px 2px rgb(255, 255, 255);
   background-color: rgb(241, 199, 247);
 }
+
+@media screen and (max-width: 770px) {
+  .home-option {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .home-option {
+    font-size: 12px;
+  }
+}
