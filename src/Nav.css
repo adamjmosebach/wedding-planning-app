@@ -15,7 +15,15 @@
   box-shadow: 4px 4px white;
 }
 
-@media screen and (max-width: 376px) {
+
+@media screen and (max-width: 426px) {
+  .logo {
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
   .logo {
     height: 60px;
     margin-top: 40px;
