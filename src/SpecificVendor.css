@@ -23,4 +23,21 @@
   margin: 13px auto;
 }
 
-@media screen and (max-width: )
+@media screen and (max-width: 415px) {
+  body {
+    position: relative;
+  }
+  .selects-div {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    position: absolute;
+    right: 8px;
+    top: -15px;
+  }
+  .specific-results {
+    margin: -25px 5px;
+    align-self: left;
+  }
+  
+}
