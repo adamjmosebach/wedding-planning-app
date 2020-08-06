@@ -141,7 +141,7 @@
   }
   .vendor-form {
     width: 80vw;
-    margin: 0 auto;
+    margin: 0 0 0 5px;
   }
   #vendor-info {
     align-self: center;
