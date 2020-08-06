@@ -22,7 +22,7 @@ function FormComponent(props) {
     <div className='form-component'>
       <label htmlFor={props.field} className='labels'><strong>{`${props.field} `}</strong> </label>
         <input type='text' id={props.field} onChange={inputVendorHandler} />
-      
+      <p className='small-screen-headings'><strong>{`${props.field} Review`}</strong></p>
       <textarea className='review-field' onChange={inputReviewHandler} />
     </div>
   )

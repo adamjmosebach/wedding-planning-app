@@ -79,12 +79,12 @@ function CreateForm() {
         <div className='name-email-fields'>
           <h3 className='form-heading'>~Your Info~</h3>
           <div className='your-info-headings'>
-            <label htmlFor='name'>Name: <input type='text' id='name' onChange={e=>inputHandler(e,updateName)} /></label>
-            <label htmlFor='email'>Email: <input type='text' id='email' onChange={e => inputHandler(e, updateEmail)} /></label>
+            <label htmlFor='name' className='name-and-email'>Name: <input type='text' id='name' onChange={e=>inputHandler(e,updateName)} className='your-inputs'/></label>
+            <label htmlFor='email' className='name-and-email'>Email: <input type='text' id='email' onChange={e => inputHandler(e, updateEmail)} className='your-inputs' /></label>
           </div>
         </div>
         <div className='vendor-fields'>
-          <h3 className='form-heading'>~Vendor Info~</h3>
+          <h3 className='form-heading' id='vendor-info'>~Vendor Info~</h3>
           <h4 className='v-name-review'><span className='form-subheading' id='vendor-name-heading'>Vendor Name</span><span className='form-subheading'>Review</span></h4>
           <div className='vendor-form'>
             <FormComponent field='Venue' vendorAction={updateVenue} reviewAction={updateVenueReview} />

@@ -8,7 +8,12 @@
   width: 440px;
   border: 8px solid rgb(247, 238, 246);
   margin: 40px auto 60px;
-  background-image: linear-gradient(to bottom right,rgba(250, 200, 208, 0.75)  ,  rgba(186, 236, 245, 0.5),rgba(159, 182, 194, 0.5) );
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(250, 200, 208, 0.75),
+    rgba(186, 236, 245, 0.5),
+    rgba(159, 182, 194, 0.5)
+  );
   border-radius: 15px;
   box-shadow: 10px 10px 20px 3px rgb(210, 183, 207);
   color: rgb(45, 78, 186);
@@ -39,7 +44,7 @@
   text-align: right;
   height: 20px;
   margin-top: -10px;
-  margin-bottom: 5px;;
+  margin-bottom: 5px;
 }
 .form-subheading {
   /* padding-right: 40px; */
@@ -54,7 +59,7 @@
   margin-right: 10px;
 }
 .vendor-fields {
-  margin-top: 60px;;
+  margin-top: 60px;
 }
 .your-info-headings {
   display: flex;
@@ -68,7 +73,7 @@
   padding: 5px 10px;
   border-radius: 10px;
   font-weight: 600;
-  transition: linear .2s;
+  transition: linear 0.2s;
 }
 #submitter:hover {
   box-shadow: 3px 3px grey;
@@ -84,20 +89,71 @@
   margin: -20px 0;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 600px) {
+  .small-screen-headings {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .create-form {
-    width: 50vw;
+    width: 60vw;
   }
   .form {
     display: flex;
     flex-direction: column;
+    margin-left: -70px;
+    align-items: center;
+    width: 90vw;
   }
   .your-info-headings {
     display: flex;
     flex-direction: column;
+    text-align: left;
+    width: 20vw;
   }
   .vendor-fields {
     display: flex;
     flex-direction: column;
+  }
+  .name-and-email {
+    margin: 5px;
+  }
+  .your-inputs {
+    margin: 5px;
+  }
+  .form-component {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 15px;
+    width: 80vw;
+  }
+  .form-subheading {
+    display: none;
+  }
+  .form-heading {
+    margin-top: -20px;
+    width: 130px;
+  }
+  .name-email-fields {
+    width: 130px;
+  }
+  .vendor-form {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  #vendor-info {
+    align-self: center;
+  }
+  .v-name-review {
+    display: none;
+  }
+  .review-field {
+    margin-top: -47px;
+    margin-left: -1px;
+  }
+  #submitter {
+    margin: 0 auto;
   }
 }
