@@ -1,16 +1,16 @@
 .createForm {
-  background-color: rgba(255, 255, 255, .75);
+  background-color: rgba(252, 222, 251, 0.75);
   background-size: cover;
   padding: 70px;
   position: relative;
   display: flex;
   justify-content: right;
   width: 440px;
-  border: 8px solid white;
-  margin: 0 auto;
+  border: 8px solid rgb(247, 238, 246);
+  margin: 40px auto 60px;
   background-image: linear-gradient(to bottom right,rgba(250, 200, 208, 0.75)  ,  rgba(186, 236, 245, 0.5),rgba(159, 182, 194, 0.5) );
   border-radius: 15px;
-  box-shadow: 10px 10px grey;
+  box-shadow: 10px 10px 20px 3px rgb(210, 183, 207);
   color: rgb(45, 78, 186);
 }
 .review-field {

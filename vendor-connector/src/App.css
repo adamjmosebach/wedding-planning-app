@@ -1,9 +1,6 @@
-.main-div {
+body {
   background-image: linear-gradient(to right, rgb(24, 7, 33) , #63dbe8);
-  height: 110vh;
+  background-size: stretch;
+  height: 100%;
   width: 100vw;
-  background-attachment: fixed;
-}
-.main {
-  
 }
