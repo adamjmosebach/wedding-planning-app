@@ -83,3 +83,9 @@
 .form {
   margin: -20px 0;
 }
+
+@media screen and (max-width: 380px) {
+  .createForm {
+    width: 90%;
+  }
+}
