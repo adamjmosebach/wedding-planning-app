@@ -68,6 +68,11 @@
   padding: 5px 10px;
   border-radius: 10px;
   font-weight: 600;
+  transition: linear .2s;
+}
+#submitter:hover {
+  box-shadow: 3px 3px grey;
+  transform: scale(1.02);
 }
 .form-heading {
   color: rgb(192, 45, 215);
