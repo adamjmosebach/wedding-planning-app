@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import DisplayARecord from './DisplayARecord';
+import './SpecificVendor.css'
 
 function SpecificVendor() {
 
@@ -49,6 +50,7 @@ function SpecificVendor() {
 
   return (
     <div>
+    <div className='selects-div'>
 
       {/* Populate Vendor Type Dropdown */}
       <select
@@ -56,7 +58,7 @@ function SpecificVendor() {
           updateVendorNameSelect('')
           updateVendorTypeSelect(e.target.value);
           console.log('vendorNameSelect = ', vendorNameSelect);
-        }}>
+        }} className='select'>
         <option value=''>Select a Vendor Type</option>
         <option value='venue'>Venue</option>
         <option value='dj'>DJ</option>
@@ -66,7 +68,7 @@ function SpecificVendor() {
 
       
       {/* Populate Vendor Name Dropdown */}
-      <select onChange={(e) => updateVendorNameSelect(e.target.value)} value={vendorNameSelect}>
+      <select onChange={(e) => updateVendorNameSelect(e.target.value)} value={vendorNameSelect}  className='select'>
         <option value='' defaultValue>
           Select a Specific Vendor
         </option>
@@ -74,8 +76,8 @@ function SpecificVendor() {
           <option value={vendor}>{vendor}</option>
         ))}
       </select>
-
-       
+      </div>
+       <div className='specific-results'>
       {/* Displaying records that match criteria */}
       {allRecords.map(
         (record) =>
@@ -88,7 +90,8 @@ function SpecificVendor() {
               vendorVisible='visible'
             />
           )
-      )}
+        )}
+      </div>
     </div>
   );
 }

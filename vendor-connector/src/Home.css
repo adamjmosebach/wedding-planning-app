@@ -1,12 +1,12 @@
 .home-option {
-  background-color: rgb(245, 232, 159);
+  background-color: rgb(243, 218, 247);
   width: 80vw;
   text-align: center;
   text-decoration: none;
   border-radius: 300px;;
   height: 75px;
   line-height: 75px;
-  box-shadow: 5px 5px 5px 5px silver;
+  box-shadow: 5px 5px 5px 5px rgb(255, 255, 255);
   margin-top: 50px;
   margin-bottom: 60px;
   color: rgb(197, 61, 204);
@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 25px;
 }
 .create-link {
   text-decoration: none;

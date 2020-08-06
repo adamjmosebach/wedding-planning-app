@@ -1,0 +1,19 @@
+.selects-div {
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: pink;
+  width: 425px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(247, 220, 241);
+}
+.select {
+  margin: 8px;
+  padding: 2px;
+}
+.specific-results {
+  width: 70vw;
+  margin: 13px auto;
+}
