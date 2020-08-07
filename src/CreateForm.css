@@ -156,7 +156,9 @@
   }
   #submitter {
     width: 128px;
-    margin-left: 20vw;
+    margin: 0 auto;
+    position: relative;
+    top: -40px;
   }
   #your-info {
     margin-left: 3vw;
