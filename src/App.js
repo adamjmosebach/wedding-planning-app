@@ -9,8 +9,12 @@ import SpecificVendor from './SpecificVendor';
 
 function App() {
   return (
+
+    // Nav Bar
     <div className='main-div'>
       <Nav />
+
+      {/* Set routes */}
       <main className='main'>
         <Route path='/' exact>
           <Home />

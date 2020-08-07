@@ -21,7 +21,6 @@ function SpecificVendor() {
             },
           }
         );
-        //console.log(recordsObj.data.records)
         updateAllRecords(recordsObj.data.records);
       } catch (err) {
         console.log(err);
@@ -30,6 +29,7 @@ function SpecificVendor() {
     apiGet();
   }, []);
 
+  // Make sure names don't repeat in vendor name dropdown
   useEffect(() => {
     updateVendorNameSelect('');
     const newOptions = allRecords.reduce((acc, record) => {
@@ -46,13 +46,13 @@ function SpecificVendor() {
 
   return (
     <div>
+
+      {/* Populate Vendor Type Dropdown */}
       <div className='selects-div'>
-        {/* Populate Vendor Type Dropdown */}
         <select
           onChange={(e) => {
             updateVendorNameSelect('');
             updateVendorTypeSelect(e.target.value);
-            console.log('vendorNameSelect = ', vendorNameSelect);
           }}
           className='select'>
           <option value=''>Select a Vendor Type</option>
@@ -71,12 +71,17 @@ function SpecificVendor() {
             Select a Specific Vendor
           </option>
           {options.map((vendor, index) => {
-            return <option value={vendor} key={vendor+index}>{vendor}</option>
+            return (
+              <option value={vendor} key={vendor + index}>
+                {vendor}
+              </option>
+            );
           })}
         </select>
       </div>
+
+      {/* Displaying records that match criteria */}
       <div className='specific-results'>
-        {/* Displaying records that match criteria */}
         {allRecords.map(
           (record) =>
             record.fields[vendorTypeSelect] === vendorNameSelect && (

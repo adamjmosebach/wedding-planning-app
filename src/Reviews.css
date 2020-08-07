@@ -1,6 +1,6 @@
 .hidden {
   display: none;
-} 
+}
 .reviews-div {
   margin: 50px auto;
   width: 600px;
@@ -9,13 +9,13 @@
   align-content: center;
 }
 .check-boxes {
-  background-color: rgba(255, 192, 203, .8);
+  background-color: rgba(255, 192, 203, 0.8);
   border-radius: 10px;
   height: 30px;
   line-height: 30px;
   width: 610px;
   box-shadow: 3px 3px 2px 1px rgb(252, 222, 249);
-  transition: linear .25s;
+  transition: linear 0.25s;
 }
 .check-opt {
   padding: 10px;
@@ -28,7 +28,7 @@
   padding-left: 30px;
   margin: 20px;
   border-radius: 10px;
-  box-shadow: 6px 6px rgba(255, 192, 203, .8);
+  box-shadow: 6px 6px rgba(255, 192, 203, 0.8);
 }
 .specific-link {
   float: right;
@@ -38,7 +38,7 @@
   color: rgb(248, 211, 217);
   text-decoration: none;
   box-shadow: 3px 3px 2px 1px rgb(94, 58, 90);
-  transition: .25s;
+  transition: 0.25s;
 }
 .specific-link:hover {
   transform: scale(1.05);
@@ -56,8 +56,8 @@
     width: 160px;
     text-align: right;
     position: absolute;
-    margin-top: -180px;;
-    right: 20px;;
+    margin-top: -180px;
+    right: 20px;
     height: 165px;
   }
   .check-opt {
@@ -65,7 +65,7 @@
   }
   .listing {
     width: 80vw;
-    margin-top: 10px;;
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 370px) {

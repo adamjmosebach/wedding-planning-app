@@ -1,4 +1,4 @@
-.navBar {
+.nav-bar {
   background-image: linear-gradient(to right, rgb(24, 7, 33), #63dbe8);
   height: 150px;
 }
@@ -14,7 +14,6 @@
   transform: scale(1.05);
   box-shadow: 4px 4px white;
 }
-
 
 @media screen and (max-width: 426px) {
   .logo {
