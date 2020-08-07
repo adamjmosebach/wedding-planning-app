@@ -131,7 +131,7 @@ src
 | Display reviews to browse | H | 1 hr | 2 hrs | TBD |
 | Advanced CSS | L | 8 hrs | 9.5 hrs | TBD |
 | Responsive Design | H | 5 hrs | 8 hrs | TBD |
-| *Create dropdown options from airtable records | M | 5.5 hrs | 0hrs | TBD |
+| *Create dropdown options from airtable records | M | 2 hrs | 5.5 hrs | TBD |
 | *Display selected results | H | 1.5 hrs | 1 hr | TBD |
 | *Send emails from site | L | 1 hr | 1 hr | TBD |
 | *View user's past reviews | L | 2 hrs | 0 hrs | TBD |
