@@ -153,6 +153,7 @@ src
 | :--------: | :----------------------------------------- |
 | displayRecords | Displays records as per its props params |
 | submitHandler | Validates name and email, then calls a GET function |
+| apiPost | Posts api data |
 
 <br>
 
@@ -163,7 +164,7 @@ It would be nice if the user would be able to:
 - Select specific vendor reviews from a dropdown of reviewed vendors
 - View all of a user's past reviews
 - Email a reviewer directly from site
-- Give star ratings
+- Give star ratings 
 - Log in
 - See thier favorites
 
@@ -176,8 +177,23 @@ It would be nice if the user would be able to:
 
 ### Code Showcase
 
-> Looking forward to including a brief code snippet of functionality that I am proud of.
+Making a button pop out insead of in
+```
+.selectd-div {
+  transition: 0.25s;
+}
+.selects-div:hover {
+  box-shadow: 3px 3px rgb(255, 255, 255);
+  transform: scale(1.02);
+}
+```
 
 ### Code Issues & Resolutions
 
-> In the future I will use this section to list of all major issues encountered and their resolution, as well as areas I deviated from the project proposal and why.
+* The responsive design was difficult, mainly becuase:
+  * I had to undo their full-screen settings before I could make them look and function how I wanted them to
+  * I had to move the selection options all over the screen
+  * I had to make the CreateForm section say different things in mobile size than in full screen. To accomplish this I had to have both set of heading I needed on screen at all times and display:none the set I wasn't using in each case.
+* The vendor name dropdown list:
+  * Getting the specific vendor's name in the dropdown was difficult for me to get to go back to the top option each time. I spent a lot of time trying to figure it out, ultimitaly finding out that the solution was quite simple.
+  * Making sure if a vendor is reviewed several times, they only show up once in the dropdown. Realize now the best way is to use the .reduce method
