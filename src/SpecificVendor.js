@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import DisplayARecord from './DisplayARecord';
-import './SpecificVendor.css'
+import './SpecificVendor.css';
 
 function SpecificVendor() {
-
   const [vendorTypeSelect, updateVendorTypeSelect] = useState('');
   const [vendorNameSelect, updateVendorNameSelect] = useState('');
   const [allRecords, updateAllRecords] = useState([]);
   const [options, updateOptions] = useState([]);
-
 
   // Get the records from Airtable
   useEffect(() => {
@@ -32,7 +30,6 @@ function SpecificVendor() {
     apiGet();
   }, []);
 
-
   useEffect(() => {
     updateVendorNameSelect('');
     const newOptions = allRecords.reduce((acc, record) => {
@@ -47,49 +44,51 @@ function SpecificVendor() {
     updateOptions(newOptions);
   }, [vendorTypeSelect]);
 
-
   return (
     <div>
-    <div className='selects-div'>
+      <div className='selects-div'>
+        {/* Populate Vendor Type Dropdown */}
+        <select
+          onChange={(e) => {
+            updateVendorNameSelect('');
+            updateVendorTypeSelect(e.target.value);
+            console.log('vendorNameSelect = ', vendorNameSelect);
+          }}
+          className='select'>
+          <option value=''>Select a Vendor Type</option>
+          <option value='venue'>Venue</option>
+          <option value='dj'>DJ</option>
+          <option value='photog'>Photographer</option>
+          <option value='florist'>Florist</option>
+        </select>
 
-      {/* Populate Vendor Type Dropdown */}
-      <select
-        onChange={(e) => {
-          updateVendorNameSelect('')
-          updateVendorTypeSelect(e.target.value);
-          console.log('vendorNameSelect = ', vendorNameSelect);
-        }} className='select'>
-        <option value=''>Select a Vendor Type</option>
-        <option value='venue'>Venue</option>
-        <option value='dj'>DJ</option>
-        <option value='photog'>Photographer</option>
-        <option value='florist'>Florist</option>
-      </select>
-
-      
-      {/* Populate Vendor Name Dropdown */}
-      <select onChange={(e) => updateVendorNameSelect(e.target.value)} value={vendorNameSelect}  className='select'>
-        <option value='' defaultValue>
-          Select a Specific Vendor
-        </option>
-        {options.map((vendor) => (
-          <option value={vendor}>{vendor}</option>
-        ))}
-      </select>
+        {/* Populate Vendor Name Dropdown */}
+        <select
+          onChange={(e) => updateVendorNameSelect(e.target.value)}
+          value={vendorNameSelect}
+          className='select'>
+          <option value='' defaultValue>
+            Select a Specific Vendor
+          </option>
+          {options.map((vendor, index) => {
+            return <option value={vendor} key={vendor+index}>{vendor}</option>
+          })}
+        </select>
       </div>
-       <div className='specific-results'>
-      {/* Displaying records that match criteria */}
-      {allRecords.map(
-        (record) =>
-          record.fields[vendorTypeSelect] === vendorNameSelect && (
-            <DisplayARecord
-              record={record}
-              vendorVar={vendorTypeSelect}
-              vendorReview={`${vendorTypeSelect}Review`}
-              vendor=''
-              vendorVisible='visible'
-            />
-          )
+      <div className='specific-results'>
+        {/* Displaying records that match criteria */}
+        {allRecords.map(
+          (record) =>
+            record.fields[vendorTypeSelect] === vendorNameSelect && (
+              <DisplayARecord
+                record={record}
+                vendorVar={vendorTypeSelect}
+                vendorReview={`${vendorTypeSelect}Review`}
+                vendor=''
+                vendorVisible='visible'
+                key={record.id}
+              />
+            )
         )}
       </div>
     </div>
