@@ -135,6 +135,8 @@
   .form-heading {
     margin-top: -20px;
     width: 130px;
+    margin-left: 10vw;
+    align-self: center;
   }
   .name-email-fields {
     width: 130px;
@@ -142,9 +144,6 @@
   .vendor-form {
     width: 80vw;
     margin: 0 0 0 5px;
-  }
-  #vendor-info {
-    align-self: center;
   }
   .v-name-review {
     display: none;
@@ -155,5 +154,8 @@
   }
   #submitter {
     margin: 0 auto;
+  }
+  #your-info {
+    margin-left: 7vw;
   }
 }

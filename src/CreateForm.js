@@ -77,7 +77,7 @@ function CreateForm() {
     <div className='create-form'>
       <form onSubmit={submitHandler} className='form'>
         <div className='name-email-fields'>
-          <h3 className='form-heading'>~Your Info~</h3>
+          <h3 className='form-heading' id='your-info'>~Your Info~</h3>
           <div className='your-info-headings'>
             <label htmlFor='name' className='name-and-email'>Name: <input type='text' id='name' onChange={e=>inputHandler(e,updateName)} className='your-inputs'/></label>
             <label htmlFor='email' className='name-and-email'>Email: <input type='text' id='email' onChange={e => inputHandler(e, updateEmail)} className='your-inputs' /></label>
