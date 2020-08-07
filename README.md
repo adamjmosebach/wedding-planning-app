@@ -125,15 +125,15 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Basic HTML     |    L     |     1.5 hrs      |     0 hrs     |    TBD    |
-| Basic CSS | L | 4 hrs | 0 hrs | TBD |
-| Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Display reviews to browse | H | 1 hr | 0 hrs | TBD |
-| Advanced CSS | L | 8 hrs | 0 hrs | TBD |
-| Responsive Design | H | 5 hrs | 0 hrs | TBD |
-| *Create dropdown options from airtable records | M | 2 hrs | 0hrs | TBD |
-| *Display selected results | H | 1.5 hrs | 0 hrs | TBD |
-| *Send emails from site | L | 1 hr | 0 hrs | TBD |
+| Basic HTML     |    L     |     1.5 hrs      |     2 hrs     |    TBD    |
+| Basic CSS | L | 4 hrs | 4 hrs | TBD |
+| Create CRUD Actions |    H     |     3 hrs      |     3.5 hrs     |     TBD     |
+| Display reviews to browse | H | 1 hr | 2 hrs | TBD |
+| Advanced CSS | L | 8 hrs | 9 hrs | TBD |
+| Responsive Design | H | 5 hrs | 6 hrs | TBD |
+| *Create dropdown options from airtable records | M | 5.5 hrs | 0hrs | TBD |
+| *Display selected results | H | 1.5 hrs | 1 hr | TBD |
+| *Send emails from site | L | 1 hr | 1 hr | TBD |
 | *View user's past reviews | L | 2 hrs | 0 hrs | TBD |
 | *Star ratings | M | 3 hrs | 0 hrs | TBD |
 | *Logging in | M | 2 hrs | 0 hrs | TBD |
