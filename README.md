@@ -125,7 +125,7 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Basic HTML     |    L     |     1.5 hrs      |     2.5 hrs     |    TBD    |
+| Basic HTML     |    L     |     1.5 hrs      |     2.5 hrs     |    2.5 hrs    |
 | Basic CSS | L | 4 hrs | 4 hrs | 4 hrs |
 | Create CRUD Actions |    H     |     3 hrs      |     3.5 hrs     |     3.5 hrs     |
 | Display reviews to browse | H | 1 hr | 2 hrs | 2 hrs |
