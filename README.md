@@ -53,7 +53,7 @@
 
 ### MVP
 
-The **Vendor Connector**'s goal is simple: connect someone planning an event to those who have done it already: make them more informed about who they choose as vendors.
+The **Vendor Connector**'s goal is simple: connect someone planning an event to someone who's done it already: make them more informed about who they choose as vendors.
 
 <br>
 
@@ -89,15 +89,16 @@ A user should be able to:
 
 ```
 src
-|__ assets/
-      |__ fonts
+|__ images/
       |__ images
 |__ App.js
-|__ Header.js
-|__ Form.js
-|__ SelectVendor.js
-|__ DisplayVendor.js
-|__ Browse.js
+|__ CreateForm.js
+|__ DisplayARecord.js
+|__ FormComponent.js
+|__ Home.js
+|__ Nav.js
+|__ Reviews.js
+|__ SpecificVendor.js
 ```
 
 <br>
@@ -107,12 +108,15 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|   App    | functional |   n   |   n   | Backbone of the site - landing/navigation               |
-|    Header    | functional |   n   |   n   | Site brand / links               |
-|  Form  | functional |   y   |   n   | What the user must input to create reviews       |
-|   SelectVendor    |   functional    |   y   |   n   | Pick what vendors to research further      |
-| DisplayVendor | functional |   n   |   y   | Display selected vendor's reviews                 |
-|    Browse    | functional |   n   |   y   | Browse all reviews |
+|   App    | functional |   n   |   n   | Backbone of the site - landing/navigation  |
+|    CreateForm    | functional |   y   |   n   | User creates new revivews here via inputs  |
+|  DisplayARecord  | functional |   n   |   y   | Component to display a record  |
+|   FormComponent    |   functional    |   n   |   y   | Component to display inputs for vendor name & review  |
+| Home | functional |   n   |   n   | Displays main buttons to create or read reviews  |
+|    Nav    | functional |   n   |   n   | Contains logo |
+|    Reviews    | functional |   y   |   n   | Browse all reviews |
+| SpecificVendor | functional |   y   |   n   | Dropdown to select specific type & name / Display results  |
+
 
 <br>
 
