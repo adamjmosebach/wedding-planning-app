@@ -126,20 +126,20 @@ src
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Basic HTML     |    L     |     1.5 hrs      |     2.5 hrs     |    TBD    |
-| Basic CSS | L | 4 hrs | 4 hrs | TBD |
-| Create CRUD Actions |    H     |     3 hrs      |     3.5 hrs     |     TBD     |
-| Display reviews to browse | H | 1 hr | 2 hrs | TBD |
-| Advanced CSS | L | 8 hrs | 9.5 hrs | TBD |
-| Responsive Design | H | 5 hrs | 8 hrs | TBD |
-| *Create dropdown options from airtable records | M | 2 hrs | 5.5 hrs | TBD |
-| *Display selected results | H | 1.5 hrs | 1 hr | TBD |
-| *Send emails from site | L | 1 hr | 1 hr | TBD |
-| *View user's past reviews | L | 2 hrs | 0 hrs | TBD |
-| *Star ratings | M | 3 hrs | 0 hrs | TBD |
-| *Logging in | M | 2 hrs | 0 hrs | TBD |
-| *Favorites | L | 2 hrs | 0 hrs | TBD |
-| Creating logo | M | - | 2 hrs | TBD |
-| TOTAL               |          |     36 hrs      |     0 hrs     |     TBD     |
+| Basic CSS | L | 4 hrs | 4 hrs | 4 hrs |
+| Create CRUD Actions |    H     |     3 hrs      |     3.5 hrs     |     3.5 hrs     |
+| Display reviews to browse | H | 1 hr | 2 hrs | 2 hrs |
+| Advanced CSS | L | 8 hrs | 9.5 hrs | 9.5 hrs |
+| Responsive Design | H | 5 hrs | 8 hrs | 8 hrs |
+| *Create dropdown options from airtable records | M | 2 hrs | 5.5 hrs | 5.5 hrs |
+| *Display selected results | H | 1.5 hrs | 1 hr | 1 hr |
+| *Send emails from site | L | 1 hr | 1 hr | 1 hr |
+| *View user's past reviews | L | 2 hrs | 0 hrs | 0 hrs |
+| *Star ratings | M | 3 hrs | 0 hrs | 0 hrs |
+| *Logging in | M | 2 hrs | 0 hrs | 0 hrs |
+| *Favorites | L | 2 hrs | 0 hrs | 0 hrs |
+| Creating logo | M | - | 2 hrs | 2 hrs |
+| TOTAL               |          |     36 hrs      |     39 hrs     |     39 hrs     |
 
 (* Denotes Post-MVP)
 
