@@ -98,7 +98,7 @@
 @media screen and (max-width: 600px) {
   .create-form {
     width: 90vw;
-    padding: 0;
+    padding: 0 0 15px 0;
   }
   .form {
     display: flex;
@@ -145,7 +145,7 @@
   }
   .vendor-form {
     width: 95vw;
-    margin: 0 0 0 11px;
+    margin: -10px 0 0 11px;
   }
   .v-name-review {
     display: none;
@@ -158,7 +158,7 @@
     width: 128px;
     margin: 0 auto;
     position: relative;
-    top: -40px;
+    top: -30px;
   }
   #your-info {
     margin-left: 3vw;
