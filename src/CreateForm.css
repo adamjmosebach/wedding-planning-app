@@ -97,14 +97,15 @@
 
 @media screen and (max-width: 600px) {
   .create-form {
-    width: 70vw;
+    width: 90vw;
+    padding: 0;
   }
   .form {
     display: flex;
     flex-direction: column;
-    margin-left: -70px;
+    margin-left: -18px;
     align-items: center;
-    width: 80vw;
+    width: 100vw;
   }
   .your-info-headings {
     display: flex;
@@ -117,7 +118,7 @@
     flex-direction: column;
   }
   .name-and-email {
-    margin: 5px;
+    margin: 5px 0 5px -4vw;
   }
   .your-inputs {
     margin: 5px;
@@ -128,6 +129,7 @@
     text-align: left;
     padding: 15px;
     width: 87vw;
+    justify-content: left;
   }
   .form-subheading {
     display: none;
@@ -135,15 +137,15 @@
   .form-heading {
     margin-top: -20px;
     width: 130px;
-    margin-left: 10vw;
     align-self: center;
   }
   .name-email-fields {
     width: 130px;
+    margin-top: 70px;
   }
   .vendor-form {
-    width: 80vw;
-    margin: 0 0 0 5px;
+    width: 95vw;
+    margin: 0 0 0 11px;
   }
   .v-name-review {
     display: none;
@@ -157,6 +159,6 @@
     margin-left: 20vw;
   }
   #your-info {
-    margin-left: 7vw;
+    margin-left: 3vw;
   }
 }
