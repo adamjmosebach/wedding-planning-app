@@ -138,6 +138,7 @@ src
 | *Star ratings | M | 3 hrs | 0 hrs | TBD |
 | *Logging in | M | 2 hrs | 0 hrs | TBD |
 | *Favorites | L | 2 hrs | 0 hrs | TBD |
+| Creating logo | M | - | 2 hrs | TBD |
 | TOTAL               |          |     36 hrs      |     0 hrs     |     TBD     |
 
 (* Denotes Post-MVP)
