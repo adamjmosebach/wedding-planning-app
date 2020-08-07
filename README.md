@@ -141,7 +141,8 @@ src
 | **Creating logo | M | - | 2 hrs | 2 hrs |
 | TOTAL               |          |     36 hrs      |     39 hrs     |     39 hrs     |
 
-(* Denotes Post-MVP) (** Denotes added during project build)
+(* Denotes Post-MVP)
+(** Denotes added during project build)
 
 <br>
 
