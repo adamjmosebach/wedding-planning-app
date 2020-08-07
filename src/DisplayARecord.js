@@ -10,6 +10,7 @@ function DisplayARecord(props) {
   const vendor = props.vendor;
   const vendorVisible = props.vendorVisible;
 
+  // If a cell is not blank, return it
   if (record[vendorReview]) {
     return (
 
