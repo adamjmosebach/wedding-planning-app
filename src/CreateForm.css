@@ -142,6 +142,7 @@
   .name-email-fields {
     width: 130px;
     margin-top: 70px;
+    margin-left: -2vw;;
   }
   .vendor-form {
     width: 95vw;
@@ -161,6 +162,6 @@
     top: -30px;
   }
   #your-info {
-    margin-left: 3vw;
+    margin-left: 4vw;
   }
 }
