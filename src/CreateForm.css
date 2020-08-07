@@ -97,7 +97,7 @@
 
 @media screen and (max-width: 600px) {
   .create-form {
-    width: 60vw;
+    width: 70vw;
   }
   .form {
     display: flex;
@@ -127,7 +127,7 @@
     flex-direction: column;
     text-align: left;
     padding: 15px;
-    width: 82vw;
+    width: 87vw;
   }
   .form-subheading {
     display: none;
@@ -153,7 +153,8 @@
     margin-left: -1px;
   }
   #submitter {
-    margin: 0 auto;
+    width: 128px;
+    margin-left: 20vw;
   }
   #your-info {
     margin-left: 7vw;
