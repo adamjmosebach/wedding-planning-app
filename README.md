@@ -138,10 +138,10 @@ src
 | *Star ratings | M | 3 hrs | 0 hrs | 0 hrs |
 | *Logging in | M | 2 hrs | 0 hrs | 0 hrs |
 | *Favorites | L | 2 hrs | 0 hrs | 0 hrs |
-| Creating logo | M | - | 2 hrs | 2 hrs |
+| **Creating logo | M | - | 2 hrs | 2 hrs |
 | TOTAL               |          |     36 hrs      |     39 hrs     |     39 hrs     |
 
-(* Denotes Post-MVP)
+(* Denotes Post-MVP) (** Denotes added during project build)
 
 <br>
 
