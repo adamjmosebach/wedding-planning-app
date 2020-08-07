@@ -177,7 +177,7 @@ It would be nice if the user would be able to:
 
 ### Code Showcase
 
-Making a button pop out insead of in
+Making a button pop out insead of in:
 ```
 .selectd-div {
   transition: 0.25s;
@@ -191,9 +191,9 @@ Making a button pop out insead of in
 ### Code Issues & Resolutions
 
 * The responsive design was difficult, mainly becuase:
-  * I had to undo their full-screen settings before I could make them look and function how I wanted them to
+  * I had to undo a lot of the full-screen settings before I could begin to work on their mobile settings
   * I had to move the selection options all over the screen
-  * I had to make the CreateForm section say different things in mobile size than in full screen. To accomplish this I had to have both set of heading I needed on screen at all times and display:none the set I wasn't using in each case.
+  * I had to make the CreateForm section say different things in mobile size than in full screen. To accomplish this I had to have both set of headings I needed on screen at all times and display:none the set I wasn't using in each case.
 * The vendor name dropdown list:
   * Getting the specific vendor's name in the dropdown was difficult for me to get to go back to the top option each time. I spent a lot of time trying to figure it out, ultimitaly finding out that the solution was quite simple.
   * Making sure if a vendor is reviewed several times, they only show up once in the dropdown. Realize now the best way is to use the .reduce method
